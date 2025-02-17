@@ -177,17 +177,22 @@ const SkillMatrix = () => {
   return (
     <Card className="w-full max-w-4xl mx-auto mt-4">
       <CardHeader>
-        <div className="flex justify-between items-center">
-          <h2 className="text-xl font-bold">SKILL MATRIX APP</h2>
-          <Button 
-            onClick={() => setIsDialogOpen(true)}
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2"
-            disabled={loading}
-          >
-            + Add Record
-          </Button>
-        </div>
-      </CardHeader>
+  <div className="flex justify-between items-center">
+    <div className="flex items-center gap-4">
+      <div className="bg-black px-4 py-2 rounded">
+        <span className="text-white font-bold">NFM</span>
+      </div>
+      <h2 className="text-xl font-bold">SKILL MATRIX APP</h2>
+    </div>
+    <Button 
+      onClick={() => setIsDialogOpen(true)}
+      className="bg-green-600 hover:bg-green-700 text-white px-4 py-2"
+      disabled={loading}
+    >
+      + Add Record
+    </Button>
+  </div>
+</CardHeader>
       <CardContent>
         <div className="flex gap-4 mb-6">
           <Input
